@@ -1,0 +1,102 @@
+{
+  "code": [
+    {
+      "opcode": "add",
+      "args": [
+        "r1",
+        "r0",
+        2
+      ]
+    },
+    {
+      "opcode": "add",
+      "args": [
+        "r2",
+        "r0",
+        8
+      ]
+    },
+    {
+      "opcode": "add",
+      "args": [
+        "r4",
+        "r0",
+        10
+      ]
+    },
+    {
+      "opcode": "add",
+      "args": [
+        "r5",
+        "r0",
+        4000000
+      ]
+    },
+    {
+      "opcode": "mul",
+      "args": [
+        "r3",
+        "r2",
+        4
+      ]
+    },
+    {
+      "opcode": "add",
+      "args": [
+        "r3",
+        "r3",
+        "r1"
+      ]
+    },
+    {
+      "opcode": "bge",
+      "args": [
+        "r3",
+        "r5",
+        11
+      ]
+    },
+    {
+      "opcode": "add",
+      "args": [
+        "r4",
+        "r4",
+        "r3"
+      ]
+    },
+    {
+      "opcode": "add",
+      "args": [
+        "r1",
+        "r0",
+        "r2"
+      ]
+    },
+    {
+      "opcode": "add",
+      "args": [
+        "r2",
+        "r0",
+        "r3"
+      ]
+    },
+    {
+      "opcode": "jmp",
+      "args": [
+        4
+      ]
+    },
+    {
+      "opcode": "out",
+      "args": [
+        "r4",
+        0
+      ]
+    },
+    {
+      "opcode": "hlt",
+      "args": []
+    }
+  ],
+  "start": 0
+}

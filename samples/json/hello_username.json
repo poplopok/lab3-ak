@@ -1,0 +1,407 @@
+{
+  "code": [
+    {
+      "opcode": "word",
+      "args": [
+        87
+      ]
+    },
+    {
+      "opcode": "word",
+      "args": [
+        104
+      ]
+    },
+    {
+      "opcode": "word",
+      "args": [
+        97
+      ]
+    },
+    {
+      "opcode": "word",
+      "args": [
+        116
+      ]
+    },
+    {
+      "opcode": "word",
+      "args": [
+        32
+      ]
+    },
+    {
+      "opcode": "word",
+      "args": [
+        105
+      ]
+    },
+    {
+      "opcode": "word",
+      "args": [
+        115
+      ]
+    },
+    {
+      "opcode": "word",
+      "args": [
+        32
+      ]
+    },
+    {
+      "opcode": "word",
+      "args": [
+        121
+      ]
+    },
+    {
+      "opcode": "word",
+      "args": [
+        111
+      ]
+    },
+    {
+      "opcode": "word",
+      "args": [
+        117
+      ]
+    },
+    {
+      "opcode": "word",
+      "args": [
+        114
+      ]
+    },
+    {
+      "opcode": "word",
+      "args": [
+        32
+      ]
+    },
+    {
+      "opcode": "word",
+      "args": [
+        110
+      ]
+    },
+    {
+      "opcode": "word",
+      "args": [
+        97
+      ]
+    },
+    {
+      "opcode": "word",
+      "args": [
+        109
+      ]
+    },
+    {
+      "opcode": "word",
+      "args": [
+        101
+      ]
+    },
+    {
+      "opcode": "word",
+      "args": [
+        63
+      ]
+    },
+    {
+      "opcode": "word",
+      "args": [
+        92
+      ]
+    },
+    {
+      "opcode": "word",
+      "args": [
+        110
+      ]
+    },
+    {
+      "opcode": "word",
+      "args": [
+        0
+      ]
+    },
+    {
+      "opcode": "word",
+      "args": [
+        72
+      ]
+    },
+    {
+      "opcode": "word",
+      "args": [
+        101
+      ]
+    },
+    {
+      "opcode": "word",
+      "args": [
+        108
+      ]
+    },
+    {
+      "opcode": "word",
+      "args": [
+        108
+      ]
+    },
+    {
+      "opcode": "word",
+      "args": [
+        111
+      ]
+    },
+    {
+      "opcode": "word",
+      "args": [
+        32
+      ]
+    },
+    {
+      "opcode": "word",
+      "args": [
+        0
+      ]
+    },
+    {
+      "opcode": "word",
+      "args": [
+        0
+      ]
+    },
+    {
+      "opcode": "word",
+      "args": [
+        0
+      ]
+    },
+    {
+      "opcode": "word",
+      "args": [
+        0
+      ]
+    },
+    {
+      "opcode": "word",
+      "args": [
+        0
+      ]
+    },
+    {
+      "opcode": "word",
+      "args": [
+        0
+      ]
+    },
+    {
+      "opcode": "word",
+      "args": [
+        0
+      ]
+    },
+    {
+      "opcode": "word",
+      "args": [
+        0
+      ]
+    },
+    {
+      "opcode": "word",
+      "args": [
+        0
+      ]
+    },
+    {
+      "opcode": "word",
+      "args": [
+        0
+      ]
+    },
+    {
+      "opcode": "word",
+      "args": [
+        10
+      ]
+    },
+    {
+      "opcode": "add",
+      "args": [
+        "r2",
+        "r0",
+        0
+      ]
+    },
+    {
+      "opcode": "lw",
+      "args": [
+        "r1",
+        "r2"
+      ]
+    },
+    {
+      "opcode": "beq",
+      "args": [
+        "r1",
+        "r0",
+        44
+      ]
+    },
+    {
+      "opcode": "out",
+      "args": [
+        "r1",
+        0
+      ]
+    },
+    {
+      "opcode": "add",
+      "args": [
+        "r2",
+        "r2",
+        1
+      ]
+    },
+    {
+      "opcode": "jmp",
+      "args": [
+        39
+      ]
+    },
+    {
+      "opcode": "add",
+      "args": [
+        "r2",
+        "r0",
+        37
+      ]
+    },
+    {
+      "opcode": "lw",
+      "args": [
+        "r2",
+        "r2"
+      ]
+    },
+    {
+      "opcode": "sub",
+      "args": [
+        "r2",
+        "r2",
+        1
+      ]
+    },
+    {
+      "opcode": "add",
+      "args": [
+        "r3",
+        "r0",
+        27
+      ]
+    },
+    {
+      "opcode": "in",
+      "args": [
+        "r1",
+        1
+      ]
+    },
+    {
+      "opcode": "beq",
+      "args": [
+        "r1",
+        "r0",
+        54
+      ]
+    },
+    {
+      "opcode": "beq",
+      "args": [
+        "r2",
+        "r0",
+        54
+      ]
+    },
+    {
+      "opcode": "sw",
+      "args": [
+        "r3",
+        "r1"
+      ]
+    },
+    {
+      "opcode": "add",
+      "args": [
+        "r3",
+        "r3",
+        1
+      ]
+    },
+    {
+      "opcode": "jmp",
+      "args": [
+        48
+      ]
+    },
+    {
+      "opcode": "sw",
+      "args": [
+        "r3",
+        "r0"
+      ]
+    },
+    {
+      "opcode": "add",
+      "args": [
+        "r2",
+        "r0",
+        21
+      ]
+    },
+    {
+      "opcode": "lw",
+      "args": [
+        "r1",
+        "r2"
+      ]
+    },
+    {
+      "opcode": "beq",
+      "args": [
+        "r1",
+        "r0",
+        61
+      ]
+    },
+    {
+      "opcode": "out",
+      "args": [
+        "r1",
+        0
+      ]
+    },
+    {
+      "opcode": "add",
+      "args": [
+        "r2",
+        "r2",
+        1
+      ]
+    },
+    {
+      "opcode": "jmp",
+      "args": [
+        56
+      ]
+    },
+    {
+      "opcode": "hlt",
+      "args": []
+    }
+  ],
+  "start": 38
+}

@@ -1,0 +1,37 @@
+{
+  "code": [
+    {
+      "opcode": "in",
+      "args": [
+        "r1",
+        1
+      ]
+    },
+    {
+      "opcode": "beq",
+      "args": [
+        "r1",
+        "r0",
+        4
+      ]
+    },
+    {
+      "opcode": "out",
+      "args": [
+        "r1",
+        0
+      ]
+    },
+    {
+      "opcode": "jmp",
+      "args": [
+        0
+      ]
+    },
+    {
+      "opcode": "hlt",
+      "args": []
+    }
+  ],
+  "start": 0
+}

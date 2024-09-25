@@ -1,0 +1,129 @@
+in_source: |-
+  _start: in      r1, 1
+          beq     r1, r0, end
+          out     r1, 0
+          jmp     _start
+  end:    hlt
+in_stdin: |-
+  This is sample text
+out_log: |
+  DEBUG    root:machine.py:278 TICK:    0 PC:    0 AR:    0 Z_FLAG: 0 N_FLAG: 0  	None                                    
+  DEBUG    root:machine.py:283 TICK:    4 PC:    1 AR:    0 Z_FLAG: 0 N_FLAG: 0  	{'opcode': 'in', 'args': [R1, 1]}       
+  DEBUG    root:machine.py:283 TICK:    8 PC:    2 AR:    1 Z_FLAG: 0 N_FLAG: 1  	{'opcode': 'beq', 'args': [R1, R0, 4]}  
+  DEBUG    root:machine.py:283 TICK:   12 PC:    3 AR:    2 Z_FLAG: 0 N_FLAG: 1  	{'opcode': 'out', 'args': [R1, 0]}      
+  DEBUG    root:machine.py:283 TICK:   16 PC:    0 AR:    3 Z_FLAG: 0 N_FLAG: 1  	{'opcode': 'jmp', 'args': [0]}          
+  DEBUG    root:machine.py:283 TICK:   20 PC:    1 AR:    0 Z_FLAG: 0 N_FLAG: 1  	{'opcode': 'in', 'args': [R1, 1]}       
+  DEBUG    root:machine.py:283 TICK:   24 PC:    2 AR:    1 Z_FLAG: 0 N_FLAG: 1  	{'opcode': 'beq', 'args': [R1, R0, 4]}  
+  DEBUG    root:machine.py:283 TICK:   28 PC:    3 AR:    2 Z_FLAG: 0 N_FLAG: 1  	{'opcode': 'out', 'args': [R1, 0]}      
+  DEBUG    root:machine.py:283 TICK:   32 PC:    0 AR:    3 Z_FLAG: 0 N_FLAG: 1  	{'opcode': 'jmp', 'args': [0]}          
+  DEBUG    root:machine.py:283 TICK:   36 PC:    1 AR:    0 Z_FLAG: 0 N_FLAG: 1  	{'opcode': 'in', 'args': [R1, 1]}       
+  DEBUG    root:machine.py:283 TICK:   40 PC:    2 AR:    1 Z_FLAG: 0 N_FLAG: 1  	{'opcode': 'beq', 'args': [R1, R0, 4]}  
+  DEBUG    root:machine.py:283 TICK:   44 PC:    3 AR:    2 Z_FLAG: 0 N_FLAG: 1  	{'opcode': 'out', 'args': [R1, 0]}      
+  DEBUG    root:machine.py:283 TICK:   48 PC:    0 AR:    3 Z_FLAG: 0 N_FLAG: 1  	{'opcode': 'jmp', 'args': [0]}          
+  DEBUG    root:machine.py:283 TICK:   52 PC:    1 AR:    0 Z_FLAG: 0 N_FLAG: 1  	{'opcode': 'in', 'args': [R1, 1]}       
+  DEBUG    root:machine.py:283 TICK:   56 PC:    2 AR:    1 Z_FLAG: 0 N_FLAG: 1  	{'opcode': 'beq', 'args': [R1, R0, 4]}  
+  DEBUG    root:machine.py:283 TICK:   60 PC:    3 AR:    2 Z_FLAG: 0 N_FLAG: 1  	{'opcode': 'out', 'args': [R1, 0]}      
+  DEBUG    root:machine.py:283 TICK:   64 PC:    0 AR:    3 Z_FLAG: 0 N_FLAG: 1  	{'opcode': 'jmp', 'args': [0]}          
+  DEBUG    root:machine.py:283 TICK:   68 PC:    1 AR:    0 Z_FLAG: 0 N_FLAG: 1  	{'opcode': 'in', 'args': [R1, 1]}       
+  DEBUG    root:machine.py:283 TICK:   72 PC:    2 AR:    1 Z_FLAG: 0 N_FLAG: 1  	{'opcode': 'beq', 'args': [R1, R0, 4]}  
+  DEBUG    root:machine.py:283 TICK:   76 PC:    3 AR:    2 Z_FLAG: 0 N_FLAG: 1  	{'opcode': 'out', 'args': [R1, 0]}      
+  DEBUG    root:machine.py:283 TICK:   80 PC:    0 AR:    3 Z_FLAG: 0 N_FLAG: 1  	{'opcode': 'jmp', 'args': [0]}          
+  DEBUG    root:machine.py:283 TICK:   84 PC:    1 AR:    0 Z_FLAG: 0 N_FLAG: 1  	{'opcode': 'in', 'args': [R1, 1]}       
+  DEBUG    root:machine.py:283 TICK:   88 PC:    2 AR:    1 Z_FLAG: 0 N_FLAG: 1  	{'opcode': 'beq', 'args': [R1, R0, 4]}  
+  DEBUG    root:machine.py:283 TICK:   92 PC:    3 AR:    2 Z_FLAG: 0 N_FLAG: 1  	{'opcode': 'out', 'args': [R1, 0]}      
+  DEBUG    root:machine.py:283 TICK:   96 PC:    0 AR:    3 Z_FLAG: 0 N_FLAG: 1  	{'opcode': 'jmp', 'args': [0]}          
+  DEBUG    root:machine.py:283 TICK:  100 PC:    1 AR:    0 Z_FLAG: 0 N_FLAG: 1  	{'opcode': 'in', 'args': [R1, 1]}       
+  DEBUG    root:machine.py:283 TICK:  104 PC:    2 AR:    1 Z_FLAG: 0 N_FLAG: 1  	{'opcode': 'beq', 'args': [R1, R0, 4]}  
+  DEBUG    root:machine.py:283 TICK:  108 PC:    3 AR:    2 Z_FLAG: 0 N_FLAG: 1  	{'opcode': 'out', 'args': [R1, 0]}      
+  DEBUG    root:machine.py:283 TICK:  112 PC:    0 AR:    3 Z_FLAG: 0 N_FLAG: 1  	{'opcode': 'jmp', 'args': [0]}          
+  DEBUG    root:machine.py:283 TICK:  116 PC:    1 AR:    0 Z_FLAG: 0 N_FLAG: 1  	{'opcode': 'in', 'args': [R1, 1]}       
+  DEBUG    root:machine.py:283 TICK:  120 PC:    2 AR:    1 Z_FLAG: 0 N_FLAG: 1  	{'opcode': 'beq', 'args': [R1, R0, 4]}  
+  DEBUG    root:machine.py:283 TICK:  124 PC:    3 AR:    2 Z_FLAG: 0 N_FLAG: 1  	{'opcode': 'out', 'args': [R1, 0]}      
+  DEBUG    root:machine.py:283 TICK:  128 PC:    0 AR:    3 Z_FLAG: 0 N_FLAG: 1  	{'opcode': 'jmp', 'args': [0]}          
+  DEBUG    root:machine.py:283 TICK:  132 PC:    1 AR:    0 Z_FLAG: 0 N_FLAG: 1  	{'opcode': 'in', 'args': [R1, 1]}       
+  DEBUG    root:machine.py:283 TICK:  136 PC:    2 AR:    1 Z_FLAG: 0 N_FLAG: 1  	{'opcode': 'beq', 'args': [R1, R0, 4]}  
+  DEBUG    root:machine.py:283 TICK:  140 PC:    3 AR:    2 Z_FLAG: 0 N_FLAG: 1  	{'opcode': 'out', 'args': [R1, 0]}      
+  DEBUG    root:machine.py:283 TICK:  144 PC:    0 AR:    3 Z_FLAG: 0 N_FLAG: 1  	{'opcode': 'jmp', 'args': [0]}          
+  DEBUG    root:machine.py:283 TICK:  148 PC:    1 AR:    0 Z_FLAG: 0 N_FLAG: 1  	{'opcode': 'in', 'args': [R1, 1]}       
+  DEBUG    root:machine.py:283 TICK:  152 PC:    2 AR:    1 Z_FLAG: 0 N_FLAG: 1  	{'opcode': 'beq', 'args': [R1, R0, 4]}  
+  DEBUG    root:machine.py:283 TICK:  156 PC:    3 AR:    2 Z_FLAG: 0 N_FLAG: 1  	{'opcode': 'out', 'args': [R1, 0]}      
+  DEBUG    root:machine.py:283 TICK:  160 PC:    0 AR:    3 Z_FLAG: 0 N_FLAG: 1  	{'opcode': 'jmp', 'args': [0]}          
+  DEBUG    root:machine.py:283 TICK:  164 PC:    1 AR:    0 Z_FLAG: 0 N_FLAG: 1  	{'opcode': 'in', 'args': [R1, 1]}       
+  DEBUG    root:machine.py:283 TICK:  168 PC:    2 AR:    1 Z_FLAG: 0 N_FLAG: 1  	{'opcode': 'beq', 'args': [R1, R0, 4]}  
+  DEBUG    root:machine.py:283 TICK:  172 PC:    3 AR:    2 Z_FLAG: 0 N_FLAG: 1  	{'opcode': 'out', 'args': [R1, 0]}      
+  DEBUG    root:machine.py:283 TICK:  176 PC:    0 AR:    3 Z_FLAG: 0 N_FLAG: 1  	{'opcode': 'jmp', 'args': [0]}          
+  DEBUG    root:machine.py:283 TICK:  180 PC:    1 AR:    0 Z_FLAG: 0 N_FLAG: 1  	{'opcode': 'in', 'args': [R1, 1]}       
+  DEBUG    root:machine.py:283 TICK:  184 PC:    2 AR:    1 Z_FLAG: 0 N_FLAG: 1  	{'opcode': 'beq', 'args': [R1, R0, 4]}  
+  DEBUG    root:machine.py:283 TICK:  188 PC:    3 AR:    2 Z_FLAG: 0 N_FLAG: 1  	{'opcode': 'out', 'args': [R1, 0]}      
+  DEBUG    root:machine.py:283 TICK:  192 PC:    0 AR:    3 Z_FLAG: 0 N_FLAG: 1  	{'opcode': 'jmp', 'args': [0]}          
+  DEBUG    root:machine.py:283 TICK:  196 PC:    1 AR:    0 Z_FLAG: 0 N_FLAG: 1  	{'opcode': 'in', 'args': [R1, 1]}       
+  DEBUG    root:machine.py:283 TICK:  200 PC:    2 AR:    1 Z_FLAG: 0 N_FLAG: 1  	{'opcode': 'beq', 'args': [R1, R0, 4]}  
+  DEBUG    root:machine.py:283 TICK:  204 PC:    3 AR:    2 Z_FLAG: 0 N_FLAG: 1  	{'opcode': 'out', 'args': [R1, 0]}      
+  DEBUG    root:machine.py:283 TICK:  208 PC:    0 AR:    3 Z_FLAG: 0 N_FLAG: 1  	{'opcode': 'jmp', 'args': [0]}          
+  DEBUG    root:machine.py:283 TICK:  212 PC:    1 AR:    0 Z_FLAG: 0 N_FLAG: 1  	{'opcode': 'in', 'args': [R1, 1]}       
+  DEBUG    root:machine.py:283 TICK:  216 PC:    2 AR:    1 Z_FLAG: 0 N_FLAG: 1  	{'opcode': 'beq', 'args': [R1, R0, 4]}  
+  DEBUG    root:machine.py:283 TICK:  220 PC:    3 AR:    2 Z_FLAG: 0 N_FLAG: 1  	{'opcode': 'out', 'args': [R1, 0]}      
+  DEBUG    root:machine.py:283 TICK:  224 PC:    0 AR:    3 Z_FLAG: 0 N_FLAG: 1  	{'opcode': 'jmp', 'args': [0]}          
+  DEBUG    root:machine.py:283 TICK:  228 PC:    1 AR:    0 Z_FLAG: 0 N_FLAG: 1  	{'opcode': 'in', 'args': [R1, 1]}       
+  DEBUG    root:machine.py:283 TICK:  232 PC:    2 AR:    1 Z_FLAG: 0 N_FLAG: 1  	{'opcode': 'beq', 'args': [R1, R0, 4]}  
+  DEBUG    root:machine.py:283 TICK:  236 PC:    3 AR:    2 Z_FLAG: 0 N_FLAG: 1  	{'opcode': 'out', 'args': [R1, 0]}      
+  DEBUG    root:machine.py:283 TICK:  240 PC:    0 AR:    3 Z_FLAG: 0 N_FLAG: 1  	{'opcode': 'jmp', 'args': [0]}          
+  DEBUG    root:machine.py:283 TICK:  244 PC:    1 AR:    0 Z_FLAG: 0 N_FLAG: 1  	{'opcode': 'in', 'args': [R1, 1]}       
+  DEBUG    root:machine.py:283 TICK:  248 PC:    2 AR:    1 Z_FLAG: 0 N_FLAG: 1  	{'opcode': 'beq', 'args': [R1, R0, 4]}  
+  DEBUG    root:machine.py:283 TICK:  252 PC:    3 AR:    2 Z_FLAG: 0 N_FLAG: 1  	{'opcode': 'out', 'args': [R1, 0]}      
+  DEBUG    root:machine.py:283 TICK:  256 PC:    0 AR:    3 Z_FLAG: 0 N_FLAG: 1  	{'opcode': 'jmp', 'args': [0]}          
+  DEBUG    root:machine.py:283 TICK:  260 PC:    1 AR:    0 Z_FLAG: 0 N_FLAG: 1  	{'opcode': 'in', 'args': [R1, 1]}       
+  DEBUG    root:machine.py:283 TICK:  264 PC:    2 AR:    1 Z_FLAG: 0 N_FLAG: 1  	{'opcode': 'beq', 'args': [R1, R0, 4]}  
+  DEBUG    root:machine.py:283 TICK:  268 PC:    3 AR:    2 Z_FLAG: 0 N_FLAG: 1  	{'opcode': 'out', 'args': [R1, 0]}      
+  DEBUG    root:machine.py:283 TICK:  272 PC:    0 AR:    3 Z_FLAG: 0 N_FLAG: 1  	{'opcode': 'jmp', 'args': [0]}          
+  DEBUG    root:machine.py:283 TICK:  276 PC:    1 AR:    0 Z_FLAG: 0 N_FLAG: 1  	{'opcode': 'in', 'args': [R1, 1]}       
+  DEBUG    root:machine.py:283 TICK:  280 PC:    2 AR:    1 Z_FLAG: 0 N_FLAG: 1  	{'opcode': 'beq', 'args': [R1, R0, 4]}  
+  DEBUG    root:machine.py:283 TICK:  284 PC:    3 AR:    2 Z_FLAG: 0 N_FLAG: 1  	{'opcode': 'out', 'args': [R1, 0]}      
+  DEBUG    root:machine.py:283 TICK:  288 PC:    0 AR:    3 Z_FLAG: 0 N_FLAG: 1  	{'opcode': 'jmp', 'args': [0]}          
+  DEBUG    root:machine.py:283 TICK:  292 PC:    1 AR:    0 Z_FLAG: 0 N_FLAG: 1  	{'opcode': 'in', 'args': [R1, 1]}       
+  DEBUG    root:machine.py:283 TICK:  296 PC:    2 AR:    1 Z_FLAG: 0 N_FLAG: 1  	{'opcode': 'beq', 'args': [R1, R0, 4]}  
+  DEBUG    root:machine.py:283 TICK:  300 PC:    3 AR:    2 Z_FLAG: 0 N_FLAG: 1  	{'opcode': 'out', 'args': [R1, 0]}      
+  DEBUG    root:machine.py:283 TICK:  304 PC:    0 AR:    3 Z_FLAG: 0 N_FLAG: 1  	{'opcode': 'jmp', 'args': [0]}          
+  DEBUG    root:machine.py:283 TICK:  308 PC:    1 AR:    0 Z_FLAG: 0 N_FLAG: 1  	{'opcode': 'in', 'args': [R1, 1]}       
+  DEBUG    root:machine.py:283 TICK:  313 PC:    4 AR:    1 Z_FLAG: 1 N_FLAG: 0  	{'opcode': 'beq', 'args': [R1, R0, 4]}  
+  INFO     root:machine.py:291 output buffer: This is sample text
+out_stdout: |
+  ============================================================
+out_code: |-
+  {
+    "code": [
+      {
+        "opcode": "in",
+        "args": [
+          "r1",
+          1
+        ]
+      },
+      {
+        "opcode": "beq",
+        "args": [
+          "r1",
+          "r0",
+          4
+        ]
+      },
+      {
+        "opcode": "out",
+        "args": [
+          "r1",
+          0
+        ]
+      },
+      {
+        "opcode": "jmp",
+        "args": [
+          0
+        ]
+      },
+      {
+        "opcode": "hlt",
+        "args": []
+      }
+    ],
+    "start": 0
+  }
